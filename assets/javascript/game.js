@@ -51,7 +51,10 @@ function main() {
 
   }
   //letterGuesser();
-
+  //  $( function() {
+  //   $( "#dialog" ).dialog();
+  // } );
+ 
 
   $(document).on('keypress', function () { //handler
 
@@ -62,12 +65,17 @@ function main() {
     compareGuess();
     updateDisplay();
 
-    if (guessesSoFar >= 10) {
+ 
+
+    if (guessesSoFar > 10) {
       console.log("Exceeded turn limit.");
       console.log(wins);
       originalValues();
       updateDisplay();
-      alert("End of game! Keep pressing keys for more rounds. ")
+      alert("End of game! Keep pressing keys for more rounds. ");
+   
+     
+      
 
     }
 
