@@ -12,7 +12,7 @@ function main() {
   function letterGuesser() {
     var Index = Math.floor(Math.random() * 26);
     computerGuess = letters[Index];
-    computerGuess = "a";
+    // computerGuess = "a"; I want this game to keep guessing random letters as the user guesses. 
   }
 
   function compareGuess() {
@@ -45,8 +45,8 @@ function main() {
     losses = 0;
     guessesSoFar = 0;
     guessesLeft = 10;
-    myGuess = ("Press a Key to see my guess");
-    yourGuess = ("Press a key!");
+    computerGuess = ("Press a Key to see my guess");
+    userGuess = ("Press a key!");
 
 
   }
@@ -67,6 +67,7 @@ function main() {
       console.log(wins);
       originalValues();
       updateDisplay();
+      alert("End of game! Keep pressing keys for more rounds. ")
 
     }
 
