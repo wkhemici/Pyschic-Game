@@ -12,4 +12,10 @@ color: deeppink;
     
 }
 
+.footer { 
+    padding: 300px;
+    background-color: blue;
+    color: pink;
+}
 
+//insert media queries 
